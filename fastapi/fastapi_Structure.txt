@@ -1,0 +1,17 @@
+inventory-system/
+├── app/
+│   ├── __init__.py
+│   ├── main.py          # FastAPI应用入口
+│   ├── database.py       # 数据库连接配置
+│   ├── models/           # SQLAlchemy模型
+│   │   └── inventory.py
+│   ├── schemas/          # Pydantic模型（请求/响应体）
+│   │   └── inventory.py
+│   ├── api/
+│   │   └── v1/
+│   │       └── endpoints/
+│   │           └── inventory.py  # 路由函数
+│   └── core/
+│       └── config.py     # 配置
+├── requirements.txt
+└── docker-compose.yml    # 可选
